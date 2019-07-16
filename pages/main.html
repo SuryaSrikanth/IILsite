@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+
+    <style>
+      .corousel{
+        margin-top: 0%;
+      }
+      #first{
+        background-image: url("http://www.indimmune.com/wp-content/gallery/slides/slide-2a.jpg");
+      }
+      #second{
+        background-image: url("https://www.nddb.coop/sites/default/files/field/image/caps0298.jpg");
+        background-size:100% 100%;
+      }
+      #third{
+        background-image: url("http://www.indimmune.com/wp-content/gallery/slides/slide-2a.jpg");
+        background-size:100% 100%;
+      }
+      #fourth{
+        background-image: url("https://www.nddb.coop/sites/default/files/field/image/caps0298.jpg");
+        background-size:100% 100%;
+      }
+      .bluetrans{
+        background-color: rgba(91, 189, 255, 0.932);
+        margin: 5% 5% 5% 5%;
+      }
+      .slidetext{
+        margin: 5% 5% 5% 5%;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <!-- <a class="btn waves-effect white grey-text darken-text-2">button</a> -->
+        </div>
+        <div class="carousel-item red white-text" href="#one!" id="first">
+          <h5 class="bluetrans right"><span class="slidetext">Shaping Global Healthcare by Spearheading the One Health Initiative.</span> </h5>
+          <p class="white-text"></p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!" id="second">
+          <h5 class="bluetrans right"><span class="slidetext">To Innovate, Produce and Market Quality Healthcare Products and Services to Improve and Extend lives</span> </h5>
+        </div>
+        <div class="carousel-item green white-text" href="#three!" id="third">
+         <h5 class="bluetrans right"><span class="slidetext">Research based - Socially conscious organization</span> </h5>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!" id="fourth">
+          <h5 class="bluetrans right"><span class="slidetext">1 Vaccine for Protection against 5 Diseases</span> </h5>
+        </div>
+      </div>
+<div class="card-panel hoverable">
+ <span class="container">
+    <h5 class="blue-text">Our Vision</h5>
+<p>
+Shaping Global Healthcare by Spearheading the One Health Initiative.
+</p>
+<h5 class="blue-text">Our Mission</h5>
+<p>
+To Innovate, Produce and Market Quality Healthcare Products and Services to Improve and Extend lives.
+</p></span>
+</div>
+      <script>
+          var ele = document.querySelector(".carousel")
+       var instance = M.Carousel.init(ele ,{
+    fullWidth: true,
+    indicators: true,
+    duration:700
+  });
+
+  setInterval(function(){
+    instance.next()
+  },6000);
+      </script>
+</body>
+</html>

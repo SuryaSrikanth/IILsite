@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Indimmune</title>
+    <link
+      rel="icon"
+      href="https://2.imimg.com/data2/IF/HW/MY-428327/indian-immunologicals-limited-logo-120x120.jpg"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      .footer {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 12px;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        text-align: center;
+      }
+      nav i,
+      nav [class^="mdi-"],
+      nav [class*="mdi-"],
+      nav i.material-icons {
+        line-height: 65px;
+      }
+      ul.company-logo li:nth-child(1) div {
+        width: 55px;
+        height: 46px;
+        padding: 0;
+        margin: 0;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 374px) {
+        ul.company-logo {
+          position: relative;
+          left: 12px;
+        }
+
+        ul.company-logo li:nth-child(1) div {
+          width: 60px;
+          height: 46px;
+          padding: 0;
+          margin: 0px 0 0 -35px;
+        }
+      }
+    </style>
+  </head>
+  <body class="grey lighten-5">
+    <ul id="dropdown2" class="dropdown-content">
+      <li class="blue-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products</li>
+      <li><a href="javascript:openAnimalHealth()">Animal Health</a></li>
+      <li><a href="javascript:openHumanHealth()">Human Health</a></li>
+      <li class="divider"></li>
+      <li><a href="javascript:openBusiness()">International Business</a></li>
+      <li><a href="javascript:openContract()">Contract Manufacturing</a></li>
+    </ul>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img
+              src="https://cdn.zmescience.com/wp-content/uploads/2018/09/water-1330252_960_720.jpg"
+            />
+          </div>
+          <a href="#!"
+            ><img
+              class="circle"
+              src="https://media.glassdoor.com/sql/519344/indian-immunologicals-limited-squarelogo-1427189016468.png"
+          /></a>
+          <a href="#!"
+            ><span class="white-text name" style="font-size: 130%;"
+              >Indian Immunologicals Ltd.</span
+            ><br
+          /></a>
+        </div>
+      </li>
+      <li>
+        <a class="waves-effect" href="javascript:openHome()"
+          ><i class="material-icons">home</i>Home</a
+        >
+      </li>
+
+      <li>
+        <a class="waves-effect" href="javascript:openContacts()"
+          ><i class="material-icons">contact_support</i>Contact</a
+        >
+      </li>
+
+      <li><div class="divider"></div></li>
+      <li>
+        <a class="waves-effect" href="javascript:openQuality()">Quality</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="javascript:openResearch()">Research</a>
+      </li>
+      <li><a class="waves-effect" href="javascript:openCSR()">CSR</a></li>
+      <li>
+        <a class="waves-effect" href="javascript:openCareers()">Careers</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="javascript:openAbout()">About Us</a>
+      </li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+          >Products<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+    </ul>
+
+    <nav class="white lighten-2 black-text">
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"
+        ><i class="material-icons black-text">menu</i></a
+      >
+      <ul class="company-logo">
+        <li>
+          <div>
+            <img
+              style="margin-top:10px;width:100%;height: 100%"
+              src="pages//static//INDIAN-IMMUNOLOGICALS-LTD_1.png"
+            />
+          </div>
+        </li>
+        <li>
+          <span class="center"
+            ><a
+              class="waves-effect bold black-text"
+              href="javascript:openHome()"
+              style="right: 18px;"
+              >INDIAN IMMUNOLOGICALS LTD.</a
+            ></span
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="hide-on-med-and-down" style="position: sticky;top:0px;">
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="javascript:openAnimalHealth()" class="blue-text"
+            >Animal Health</a
+          >
+        </li>
+        <li>
+          <a href="javascript:openHumanHealth()" class="blue-text"
+            >Human Health</a
+          >
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="javascript:openBusiness()" class="blue-text"
+            >International Business</a
+          >
+        </li>
+        <li>
+          <a href="javascript:openContract()" class="blue-text"
+            >Contract Manufacturing</a
+          >
+        </li>
+      </ul>
+      <nav class="blue lighten-2">
+        <ul>
+          <li><a class="waves-effect" href="javascript:openHome()">Home</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Products<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <li>
+            <a class="waves-effect" href="javascript:openQuality()">Quality</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="javascript:openResearch()"
+              >Research</a
+            >
+          </li>
+          <li><a class="waves-effect" href="javascript:openCSR()">CSR</a></li>
+          <li>
+            <a class="waves-effect" href="javascript:openCareers()">Careers</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="javascript:openAbout()">About Us</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="javascript:openContacts()">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 
+    <a href="javascript:openHome()"><i class="material-icons">home</i>Home</a><br>
+    <a href="javascript:openContacts()"><i class="material-icons">contact_support</i>Contact</a><br>
+    <a href="javascript:openAbout()">About Us</a> -->
+
+    <iframe
+      id="myFrame"
+      width="100%"
+      onload="this.style.height=this.contentDocument.body.scrollHeight +'px';"
+      src="pages//main.html"
+      frameborder="0"
+    ></iframe>
+
+    <script>
+      function openHome() {
+        document.getElementById("myFrame").src = "pages//main.html";
+        instance.close();
+      }
+      function openAnimalHealth() {
+        document.getElementById("myFrame").src =
+          "pages//products//animalhealth.html";
+        instance.close();
+      }
+      function openHumanHealth() {
+        document.getElementById("myFrame").src =
+          "pages//products//humanhealth.html";
+        instance.close();
+      }
+      function openBusiness() {
+        document.getElementById("myFrame").src =
+          "pages//products//internationalbusiness.html";
+        instance.close();
+      }
+      function openContract() {
+        document.getElementById("myFrame").src =
+          "pages//products//contractmanufacture.html";
+        instance.close();
+      }
+      function openCSR() {
+        document.getElementById("myFrame").src = "pages//csr.html";
+        instance.close();
+      }
+      function openCareers() {
+        document.getElementById("myFrame").src = "pages//careers.html";
+        instance.close();
+      }
+      function openResearch() {
+        document.getElementById("myFrame").src = "pages//research.html";
+        instance.close();
+      }
+      function openContacts() {
+        document.getElementById("myFrame").src = "pages//contact.html";
+        instance.close();
+      }
+      function openAbout() {
+        document.getElementById("myFrame").src = "pages//about.html";
+        instance.close();
+      }
+      function openQuality() {
+        document.getElementById("myFrame").src = "pages//quality.html";
+        instance.close();
+      }
+    </script>
+    <script type="text/javascript">
+      var elem = document.querySelector(".sidenav");
+      var instance = M.Sidenav.init(elem, {
+        inDuration: 350,
+        outDuration: 350,
+        edge: "left" //or right
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".dropdown-trigger");
+        var instances = M.Dropdown.init(elems);
+      });
+    </script>
+    <br />
+    <br />
+    <div class="footer hide-on-med-and-down">
+      <div>
+        &copy;Copyright 2019 Indian Immunologicals Limited. All rights reserved.
+      </div>
+      <div><a href="javascript:openAbout()">Information/Policies</a></div>
+      <div><a href="#!">Sitemap</a></div>
+      <div>
+        <a
+          href="https://github.com/SuryaSrikanth"
+          target="_blank"
+          style="margin-right: 0%;"
+          >Site Credits</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

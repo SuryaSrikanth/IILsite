@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 300px;
+                /* The width is the width of the web page */
+              text-align: center;
+              width: 100%;
+              /* border: 1px solid grey; */
+              
+             }
+             #regflex{
+               display: flex;
+               justify-content: center;
+              flex-wrap: wrap;
+             }
+             #manufacflex{
+              display: flex;
+               justify-content: center;
+              flex-wrap: wrap;
+             }
+             .card{
+                min-width: 350px;
+                width: 40%;
+             }
+          </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="blue lighten-2 center">
+        <ul>
+                <li><a class="waves-effect" href="#map">Registered Office</a></li>
+                <li><a class="waves-effect" href="#manufacflex">Manufacturing</a></li>
+                <li><a class="waves-effect" href="#buss">Business</a></li>
+                
+        </ul>
+      </nav></div>
+    <!-- API = AIzaSyBAo0TO6JybbVb83vVxsPTMGDPEUZrlW-M -->
+    <!--The div element for the map -->
+    <div id="map"></div><br>
+   
+<div id="regflex">
+    <div class="container" style="width: 350px;max-width: 100%;">
+      <div class="card-panel hoverable" style="min-height: 250px;">
+        <h5 class="blue-text">Registered Office</h5>
+        <h6>Indian Immunologicals Ltd.</h6>
+        Road No. 44, Jubilee Hills, Hyderabad – 500033 <br>
+        Telangana, India. <br>
+        Tel: +91 8466924444, +91 7997915555, 040-67682200</div></div>
+
+        <div class="container" style="width: 350px;max-width: 100%;">
+          <div class="card-panel hoverable" style="min-height: 250px;">
+          <h5 class="blue-text">Plant Office</h5>
+        <h6>Indian Immunologicals Ltd.</h6>
+        Rakshapuram, Gachibowli Post, Hyderabad – 500032 <br>
+        Telangana, India. <br>
+        Tel: +91 9948298622, +91 9948298522 </div><br>
+          
+</div>
+<div class="container" style="width: 350px;max-width: 100%; margin-top: 25px;">
+    Email: <a href="mailto:info@indimmune.com" target="_top">info@indimmune.com</a> <br>
+    CIN: <strong>U72200TG1999PLC032666</strong></div>
+</div>
+<hr>
+<div class="container center">
+<a class="waves-effect waves-light btn modal-trigger blue lighten-2" href="#modal1" style="margin: 20px 20px 20px 20px">Distribution Network</a>
+<a class="waves-effect waves-light btn modal-trigger blue lighten-2" href="#modal2" style="margin: 20px 20px 20px 20px">Contact Us</a></div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <table id="Table">
+        <tbody>
+        <tr>
+        <th>Location</th>
+        <th>Address</th>
+        <th>Contact Person</th>
+        </tr>
+        <tr>
+        <td><strong>AHMEDABAD</strong><br>
+        (GUJARAT)</td>
+        <td>C-2,SHRINIDHI- ESTATE, B/H PHILIPS WARE-HOUSE, ASLALI-382427<br>
+        <a href="mailto:ahmedabadcf@indimmune.com">ahmedabadcf@indimmune.com</a></td>
+        <td>Mr. Pranav Trivedi<br>
+        09909647773</td>
+        </tr>
+        <tr>
+        <td><strong>AMBALA</strong><br>
+        (Haryana)</td>
+        <td>3, OM CHAMBERS,<br>
+        KULDEEP NAGAR, NANHERE ROAD,<br>
+        AMBALA CANTT., HARYANA – 133 001<br>
+        <a href="mailto:ambalacf@indimmune.com">ambalacf@indimmune.com</a></td>
+        <td>
+        <div>Mr. Naresh<br>
+        09354700911</div>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>BANGALURU</strong><br>
+        (Karnataka)</td>
+        <td>NO 145/1, 5TH MAIN, 2ND CROSS, CHAMARAJPET,<br>
+        BANGALURU -560018<br>
+        <a href="mailto:bngcf@indimmune.com">bngcf@indimmune.com</a></td>
+        <td>Mr. Manjunath<br>
+        09845576000</td>
+        </tr>
+        <tr>
+        <td><strong>BHOPAL</strong><br>
+        (Madhya Pradesh)</td>
+        <td>46, BANJARI SOCIETY, NEAR KWALITY HOMES,<br>
+        KOLAR ROAD, BHOPAL – 42<br>
+        <a href="mailto:bhopalcf@indimmune.com">bhopalcf@indimmune.com</a></td>
+        <td>Mr. Manish<br>
+        09424453799</td>
+        </tr>
+        <tr>
+        <td><strong>CHENNAI</strong><br>
+        (Tamil Nadu)</td>
+        <td>
+        <div>Plot no:6 &amp; 7, Northern side,Portion A,<br>
+        Second floor, Sundar Nagar, ALAPPAKKAM MAIN ROAD,</div>
+        <div>MADURAVOYAL, CHENNAI – 600095<br>
+        <a href="mailto:chennaicf@indimmune.com">chennaicf@indimmune.com</a></div>
+        </td>
+        <td>Mr. Karthik<br>
+        09791328137</td>
+        </tr>
+        <tr>
+        <td><strong>COCHIN -ERNAKULAM</strong><br>
+        (Kerala)</td>
+        <td>XII/774 E, PALACHUVADU ROAD<br>
+        PADAMUGAL, KAKKANAD,<br>
+        KOCHI 682019, ERNAKULAM DIST. 682030<br>
+        <a href="mailto:cochincf@indimmune.com">cochincf@indimmune.com</a></td>
+        <td>Mr. Shaji<p></p>
+        <div>04844061749/</div>
+        <div>09388175586</div>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>CUTTACK</strong><br>
+        (Orissa)</td>
+        <td>AULRANI COMPOUND, DOLAMUNDAI<br>
+        POST – TELENGA BAZAAR<br>
+        CUTTACK – 753009<br>
+        <a href="mailto:cuttackcf@indimmune.com">cuttackcf@indimmune.com</a></td>
+        <td>Mr. Piyush Agarwal<br>
+        09861030604</td>
+        </tr>
+        <tr>
+        <td><strong>DELHI</strong></td>
+        <td>B-46, 1ST FLOOR, LAWRENCE ROAD,<br>
+        INDUSTRIAL AREA, DELHI – 110035<br>
+        <a href="mailto:newdelhicf@indimmune.com">newdelhicf@indimmune.com</a></td>
+        <td>Mr. Kunal Sawhney<br>
+        09810699965</td>
+        </tr>
+        <tr>
+        <td><strong>GUWAHATI</strong><br>
+        (Assam)</td>
+        <td>1ST FLOOR, COL. J ALI ROAD, LAKHTOKIA,<br>
+        GUWAHATI – 01, ASSAM<br>
+        <a href="mailto:gowhaticf@indimmune.com">gowhaticf@indimmune.com</a></td>
+        <td>Mr. Dipak<br>
+        09864024570<br>
+        09207411207</td>
+        </tr>
+        <tr>
+        <td><strong>HYDERABAD</strong><br>
+        (Telangana)</td>
+        <td>PLOT NO 81 &amp; 82,&nbsp;1ST and 2ND FLOOR, ON VIHAR COLONY,<br>
+        UPPAL, MEDIPALLY, HYDERABAD – 500039<br>
+        <a href="mailto:hydcf@indimmune.com">hydcf@indimmune.com</a></td>
+        <td>Mr.Santosh<br>
+        09000376925</td>
+        </tr>
+        <tr>
+        <td><strong>JAIPUR</strong><br>
+        (Rajasthan)</td>
+        <td>Basement, G-01/918,<br>
+        Phase-III, Sitapura Industrial Area, JAIPUR<br>
+        <a href="mailto:jaipurcf@indimmune.com">jaipurcf@indimmune.com</a></td>
+        <td>Mr. Pramod<br>
+        09928801049</td>
+        </tr>
+        <tr>
+        <td><strong>KOLKATA</strong><br>
+        (West Bengal)</td>
+        <td>8/1/41/1A, RABINDRASARANI<br>
+        KOLKATA – 700 028<br>
+        <a href="mailto:kolkattacf@indimmune.com">kolkattacf@indimmune.com</a></td>
+        <td>Mr. Probasis Paul<br>
+        09804298088</td>
+        </tr>
+        <tr>
+        <td><strong>LUCKNOW</strong><br>
+        (Uttar Pradesh)</td>
+        <td>E-1/51, Transport Nagar,Phase -II, Kanpur Road<br>
+        PS-Sarojini Nagar, Lucknow 226012<br>
+        <a href="mailto:lkncf@indimmune.com">lkncf@indimmune.com</a></td>
+        <td>Mr. Raghavendra<br>
+        09369255393</td>
+        </tr>
+        <tr>
+        <td><strong>LUDHIANA</strong><br>
+        (Punjab)</td>
+        <td>15- MODEL TOWN, LUDHIANA 141 002<br>
+        <a href="mailto:ludhianacf@indimmune.com">ludhianacf@indimmune.com</a></td>
+        <td>Mr.Sandeep<br>
+        08725058502</td>
+        </tr>
+        <tr>
+        <td><strong>PATNA</strong><br>
+        (Bihar)</td>
+        <td>PLOT NO B/9, TRANSPORT NAGAR,<br>
+        PATNA – 800 007<br>
+        <a href="mailto:patnacf@indimmune.com">patnacf@indimmune.com</a></td>
+        <td>
+        <div><span style="line-height: 1.5em;">Mr. Raj Kumar</span></div>
+        <div><span style="line-height: 1.5em;">09470485300</span></div>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>PUNE</strong><br>
+        (Maharastra)</td>
+        <td>SONI WAREHOUSING,NO.2,&nbsp;SURVEY NO. 1096<br>
+        BEHIND LAXMAN WEIGH BRIDGE<br>
+        PUNE-SASWAD ROAD, 15TH MILE STONE,<br>
+        VILLAGE – WADKI, DIST – PUNE<br>
+        PIN 412308<br>
+        <a href="mailto:punecf@indimmune.com">punecf@indimmune.com</a></td>
+        <td>Mr. Pranay Gopale<br>
+        09890637823</td>
+        </tr>
+        <tr>
+        <td><strong>RAIPUR</strong><br>
+        (Chattisgarh)</td>
+        <td>KHASARA NO 123/20 P.H.N. 109, SANTWANI COMPOUND,<br>
+        DALDAL SEONI ROAD, MOWA RAIPUR (C.G.)<br>
+        <a href="mailto:raipurcf@indimmune.com">raipurcf@indimmune.com</a></td>
+        <td>Mr. Ashish Nathani<br>
+        09009690096</td>
+        </tr>
+        <tr>
+        <td><strong>RANCHI</strong><br>
+        (Jharkhand)</td>
+        <td>B.S. PHARMA (CSA), H.No.102, ROAD NO 1,<br>
+        RAMNANDAN HOUSE, BASANT VIHAR, HARMU,<br>
+        RANCHI-2, JHARKHAND – 834 002<br>
+        <a href="mailto:ranchicf@indimmune.com">ranchicf@indimmune.com</a></td>
+        <td>
+        <div>Mr. Saroj</div>
+        <div>09572389717</div>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>ROORKEE</strong><br>
+        (Uttarakhand)</td>
+        <td>1138/1, NEAR SUB JAIL, DEHRADUN ROAD, ROORKEE,<br>
+        DIST: HARIDWAR, UTTARAKHAND<br>
+        <a href="mailto:roorkeecf@indimmune.com">roorkeecf@indimmune.com</a></td>
+        <td>Mr Surender Singh<br>
+        09359208640</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="wpcf7" id="wpcf7-f1097-p147-o1"><form action="/index.php/contact-us/#wpcf7-f1097-p147-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div style="display: none;">
+        <input type="hidden" name="_wpcf7" value="1097">
+        <input type="hidden" name="_wpcf7_version" value="3.6">
+        <input type="hidden" name="_wpcf7_locale" value="en_US">
+        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1097-p147-o1">
+        <input type="hidden" name="_wpnonce" value="bc0abb67d7">
+        </div>
+        <p></p><div class="wpcf7-response-output wpcf7-display-none"></div><p></p>
+        <p>Your Name (required)<br>
+            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </p>
+        <p>Your Email (required)<br>
+            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </p>
+        <p>Subject<br>
+            <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span> </p>
+        <p>Your Message<br>
+            <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+        <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn blue lighten-2"><img class="ajax-loader" src="http://www.indimmune.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></p>
+        </form></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+<br>
+<div style="margin-top: 60px;"  class="container">
+    <h4 class="blue-text" >Manufacturing</h4><br>
+    <div id="manufacflex">  
+    <div class="card hoverable" style="margin: 20px 20px 20px 20px">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static//hydpic.png" style="height: 150px">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                    Hyderabad<i class="material-icons right">more_vert</i></span>
+              <p><a href="mailto:info@indimmune.com">info@indimmune.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Indian Immunologicals Ltd<i class="material-icons right">close</i></span>
+              <p>Rakshapuram, Gachibowli,
+                    Hyderabad – 500032, Telangana, India.</p>
+                    
+                    <p>Tel: +91 9948298622, +91 9948298522 <br>       
+                            Fax: +91 40 23000213</p>
+            </div>
+          </div>
+          <div class="card hoverable" style="margin: 20px 20px 20px 20px">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static//ootypic.jfif" style="height: 150px">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                    Ooty<i class="material-icons right">more_vert</i></span>
+              <p><a href="mailto:info@indimmune.com">info@indimmune.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Human Biologicals Institute<i class="material-icons right">close</i></span>
+              <p>Kozipannai, Pudumund
+                Udhagamandalam,
+                Ooty – 643 007 Tamil Nadu,
+                India.</p>
+                    
+                    <p>Tel : +91 423 2443186<br> 
+                      Fax: +91 423 2442048</p>
+            </div>
+          </div>
+          <div class="card hoverable" style="margin: 20px 20px 20px 20px">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static//karkapatla.jpg" style="height: 150px">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                    Karkapatla<i class="material-icons right">more_vert</i></span>
+              <p><a href="mailto:info@indimmune.com">info@indimmune.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Indian Immunologicals Ltd<i class="material-icons right">close</i></span>
+              <p>Survey No. 281-284 & 321,
+                Biotech Park Phase – III,
+                Karakpatla Village, Mulugu Mandal,
+                Medak (Dist.), Telangana – 502281.</p>
+                    
+                    <p>Tel: +91 7660019444,  Tel: +91 7729013222</p>
+            </div>
+          </div>
+          <div class="card hoverable" style="margin: 20px 20px 20px 20px">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static//nzpic.jfif" style="height: 150px">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                    Dargaville<i class="material-icons right">more_vert</i></span>
+              <p><a href="mailto:info@indimmune.com">info@indimmune.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Pristine Biologicals (NZ) Ltd.<i class="material-icons right">close</i></span>
+              <p>8 Mako Street, Dargaville,
+                New Zealand.</p>
+                    
+                    <p>Tel: +649 835 3847</p>
+            </div>
+          </div>
+        </div>
+</div>
+<div style="margin-top: 60px;max-width: 100%;"  class="container">
+   
+<div class="center" id="buss">
+    <div class="card hoverable" style="width: 100%;">
+        <div class="card-content">
+          <p><h4 class="blue-text" >Business</h4></p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a href="#animalh">Animal Health</a></li>
+            <li class="tab"><a class="active" href="#humanh">Human Health</a></li>
+            <li class="tab"><a href="#internationalb">International Business</a></li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="animalh"><strong>Head</strong> – AH Marketing <br>
+              Tel: +91 9030011208</div>
+          <div id="humanh">
+             <strong> Head</strong> – HH Marketing <br>
+              Tel: +91 8466924444,
+              <br>       +91 7997915555
+              <br> 040-67682200
+          </div>
+          <div id="internationalb">
+              <strong> Head</strong> – International Business <br>
+              Tel: +91 8466924444, <br>
+       +91 7997915555 <br>040-67682200
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <script>
+var el = document.querySelector(".tabs");
+var instance = M.Tabs.init(el);
+
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: -25.344, lng: 131.036};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAo0TO6JybbVb83vVxsPTMGDPEUZrlW-M&callback=initMap">
+                </script>
+                
+                 
+
+
+  <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });</script>
+</body>
+</html>

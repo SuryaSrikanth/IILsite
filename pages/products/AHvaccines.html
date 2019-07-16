@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="blue lighten-2">
+      <nav class="blue lighten-2 center">
+        <ul>
+            <!-- <li class="blue lighten-2"><a class="waves-effect" href="animalhealth.html">Animal Health</a></li> -->
+          <li class="blue lighten-2">
+            <a class="waves-effect" href="AHfacilities.html">Facilities</a>
+          </li>
+          <li class="blue lighten-2">
+            <a class="waves-effect" href="AHvaccines.html">Vaccines</a>
+          </li>
+          <li class="blue lighten-2">
+            <a class="waves-effect" href="AHhealthproducts.html"
+              >Health Products</a
+            >
+          </li>
+          <li class="blue lighten-2">
+            <a class="waves-effect" href="AHCRM.html">CRM</a>
+          </li>
+          <li class="blue lighten-2">
+            <a class="waves-effect" href="AHVeterinarianresourses.html"
+              >Veterinarian Resources</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+    <div class="container">
+      <form onsubmit="return false">
+        <div class="input-field">
+          <input
+            type="search"
+            required
+            placeholder="Search here..."
+            id="myInput"
+            onkeyup="mySearchFunction()"
+          />
+         
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h5 class="blue-text">Livestock Vaccines</h5>
+      <table class="vac-prod" id="myTable">
+        <tbody>
+          <tr>
+            <th class="brand-name">Brand Name</th>
+            <th class="prod-desc">Product Description</th>
+            <th class="prod-animal">Animals</th>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Cysvax</div></td>
+            <td>
+              <div class="product-title"><strong>Cysvax</strong></div>
+              Prophylactic vaccination against Porcine Cysticercosis<br /><span
+                class="marpdf"
+                ><img
+                  class="alignnone size-full wp-image-811"
+                  alt="Cysvax Lit (DCGI submission)"
+                  src="http://www.indimmune.com/wp-content/themes/IIL/images/doc_pdf.png"
+                  width="16"
+                  height="16"
+                /><a
+                  href="http://www.indimmune.com/wp-content/uploads/2017/05/Cysvax-Lit-DCGI-submission.pdf"
+                  target="_blank"
+                  >Download Full Details</a
+                ></span
+              >
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/pig.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha BQ</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha BQ</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Black Quarter vaccine in bovines.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/camel.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Raksha HS + BQ</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Raksha HS + BQ</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Hemorrhagic Septicemia and Black Quarter in bovines.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/camel.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Raksha Triovac</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Raksha Triovac</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Foot and Mouth Disease , Hemorrhagic Septicemia and Black Quarter
+              in bovines.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/camel.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Brucella Rev1</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Brucella Rev1</strong></div>
+              The vaccine is recommended for prophylactic vaccinations against
+              brucellosis in sheep and goats and the vaccine strain Brucella
+              melitensis Rev1 is used in the vaccine<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Brucella s19</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Brucella s19</strong></div>
+              Bruvax having S 19 strain is recommended for prophylactic
+              vaccination against Brucellosis in female calves and non pregnant
+              and non lactating animals.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha PPR</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha PPR</strong></div>
+              RAKSHA PPR is recommended for prophylactic vaccination against
+              Peste des Petits Ruminants.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha SP</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha SP</strong></div>
+              Raksha&nbsp;SP is recommended for prophylactic vaccination against
+              Sheep Pox.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha ET</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha ET</strong></div>
+              Raksha-ET is recommended for prophylactic vaccination against
+              Enterotoxaemia in sheep and goats.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha-Blu</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha-Blu</strong></div>
+              Polyvalent vaccine against Bluetongue Disease<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha-Ovac</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha-Ovac</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Foot and Mouth Disease in bovines, sheep and goats.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2014/01/calf.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/camel.png"
+                alt="2"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="3"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="4"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Rakshavac-T</div></td>
+            <td>
+              <div class="product-title"><strong>Rakshavac-T</strong></div>
+              RAKSHAVAC – T Vaccine is recommended for prophylactic vaccination
+              against Theileriosis.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2014/01/calf.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksha HS</div></td>
+            <td>
+              <div class="product-title"><strong>Raksha HS</strong></div>
+              Raksha-HS is recommended for prophylactic vaccination against
+              Haemorrhagic Septicaemia.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/goat.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/sheep.png"
+                alt="1"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Raksha Biovac</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Raksha Biovac</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Foot and Mouth Disease and Hemorrhagic Septicemia in bovines.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2014/01/calf.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Bruvax Plus</div></td>
+            <td>
+              <div class="product-title"><strong>Bruvax Plus</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Brucellosis in female calves, and non pregnant and non lactating
+              animals.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2014/01/calf.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <div class="product-title">Bruvax Delta</div>
+            </td>
+            <td>
+              <div class="product-title"><strong>Bruvax Delta</strong></div>
+              Bovine Brucellosis Vaccine (RB 51)<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2014/01/calf.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <h5 class="blue-text">
+        Companion vaccines
+      </h5>
+      <table class="vac-prod" id="Table2">
+        <tbody>
+          <tr>
+            <th class="brand-name">Brand Name</th>
+            <th class="prod-desc">Product Description</th>
+            <th class="prod-animal">Animals</th>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Raksharab</div></td>
+            <td>
+              <div class="product-title"><strong>Raksharab</strong></div>
+              Raksharab is recommended for immunization in dogs and other
+              domestic animals against rabies for prophylactic use and post bite
+              therapy.<br /><span class="marpdf"
+                ><img
+                  class="alignnone size-full wp-image-811"
+                  alt="Raksharab canine"
+                  src="http://www.indimmune.com/wp-content/themes/IIL/images/doc_pdf.png"
+                  width="16"
+                  height="16"
+                /><a
+                  href="http://www.indimmune.com/wp-content/uploads/2014/02/Raksharab-canine.pdf"
+                  target="_blank"
+                  >Download Full Details</a
+                ></span
+              >
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cat.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cow.png"
+                alt="2"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="3"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Megavac CC</div></td>
+            <td>
+              <div class="product-title"><strong>Megavac CC</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              canine carona in dogs.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Megavac-6</div></td>
+            <td>
+              <div class="product-title"><strong>Megavac-6</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              Canine Distemper, Hepatitis, Parvovirus and Leptospirosis in
+              dogs<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Starvac-R</div></td>
+            <td>
+              <div class="product-title"><strong>Starvac-R</strong></div>
+              The vaccine is recommended for immunization in dogs and other
+              domestic animals against rabies for prophylactic use.<br /><span
+                class="marpdf"
+              ></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/buffalo.png"
+                alt="0"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/cat.png"
+                alt="1"
+              />
+              &nbsp;<img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="2"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Megavac-7</div></td>
+            <td>
+              <div class="product-title"><strong>Megavac-7</strong></div>
+              Live Canine Distemper, Adenovirus (CAV-2), Parvovirus,
+              Parainfluenza and Inactivated Adenovirus (CAV-1), Leptospirosis
+              Vaccine.<br /><span class="marpdf"></span>
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td class="center"><div class="product-title">Megavac-P</div></td>
+            <td>
+              <div class="product-title"><strong>Megavac-P</strong></div>
+              The vaccine is recommended for prophylactic vaccination against
+              canine parvo in dogs.<br /><span class="marpdf"
+                ><img
+                  class="alignnone size-full wp-image-811"
+                  alt="Megavac-P"
+                  src="http://www.indimmune.com/wp-content/themes/IIL/images/doc_pdf.png"
+                  width="16"
+                  height="16"
+                /><a
+                  href="http://www.indimmune.com/wp-content/uploads/2014/02/Megavac-P1.pdf"
+                  target="_blank"
+                  >Download Full Details</a
+                ></span
+              >
+            </td>
+            <td>
+              <img
+                src="http://www.indimmune.com/wp-content/uploads/2013/12/dog.png"
+                alt="0"
+              />
+              &nbsp;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      function mySearchFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+
+        filter = input.value.toUpperCase();
+        console.log(filter);
+        table = document.getElementById("myTable");
+        table2 = document.getElementById("Table2");
+        tr = table.getElementsByTagName("tr");
+        tr2 = table2.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+        for (i = 0; i < tr2.length; i++) {
+          td = tr2[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr2[i].style.display = "";
+            } else {
+              tr2[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
