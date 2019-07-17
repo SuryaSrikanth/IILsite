@@ -129,7 +129,7 @@
           </div></li>
           <li>
           <div><a href="javascript:openAbout()" style="font-size: 10px;">Information/Policies</a></div>
-        </li><li>      <div><a href="#!" style="font-size: 10px;">Sitemap</a></div>
+        </li><li>      <div><a href="javascript:openSiteMap()" style="font-size: 10px;">Sitemap</a></div>
         </li><div>
             <a
               href="https://github.com/SuryaSrikanth"
@@ -284,6 +284,10 @@
         document.getElementById("myFrame").src = "pages//quality.html";
         instance.close();
       }
+      function openSiteMap(){
+        document.getElementById("myFrame").src = "pages//sitemap.html";
+        instance.close();
+      }
     </script>
     <script type="text/javascript">
       var elem = document.querySelector(".sidenav");
@@ -304,7 +308,7 @@
         &copy;Copyright 2019 Indian Immunologicals Limited. All rights reserved.
       </div>
       <div><a href="javascript:openAbout()">Information/Policies</a></div>
-      <div><a href="#!">Sitemap</a></div>
+      <div><a href="javascript:openSiteMap()">Sitemap</a></div>
       <div>
         <a
           href="https://github.com/SuryaSrikanth"
