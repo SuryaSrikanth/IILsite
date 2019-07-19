@@ -60,6 +60,12 @@
         }
       }
     </style>
+
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
+      }
+    </script>
   </head>
   <body class="grey lighten-5">
     <ul id="dropdown2" class="dropdown-content">
@@ -123,22 +129,34 @@
       </li>
       <li><div class="divider"></div></li>
       <li>
-        
-          <div style="font-size: 8px;">
-            &copy;Copyright 2019 Indian Immunologicals Limited. All rights reserved.
-          </div></li>
-          <li>
-          <div><a href="javascript:openAbout()" style="font-size: 10px;">Information/Policies</a></div>
-        </li><li>      <div><a href="javascript:openSiteMap()" style="font-size: 10px;">Sitemap</a></div>
-        </li><div>
-            <a
-              href="https://github.com/SuryaSrikanth"
-              target="_blank"
-              style="margin-right: 0%;
+        <div style="font-size: 8px;">
+          &copy;Copyright 2019 Indian Immunologicals Limited. All rights
+          reserved.
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="javascript:openAbout()" style="font-size: 10px;"
+            >Information/Policies</a
+          >
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="javascript:openSiteMap()" style="font-size: 10px;"
+            >Sitemap</a
+          >
+        </div>
+      </li>
+      <li>
+        <div>
+          <a
+            href="https://github.com/SuryaSrikanth"
+            target="_blank"
+            style="margin-right: 0%;
               font-size: 10px;"
-              >Site Credits</a
-            >
-          </div>
+            >Site Credits</a
+          >
         </div>
       </li>
     </ul>
@@ -222,19 +240,16 @@
       </nav>
     </div>
 
-    <!-- 
-    <a href="javascript:openHome()"><i class="material-icons">home</i>Home</a><br>
-    <a href="javascript:openContacts()"><i class="material-icons">contact_support</i>Contact</a><br>
-    <a href="javascript:openAbout()">About Us</a> -->
-
-    <iframe
-      id="myFrame"
-      width="100%"
-      onload="this.style.height=this.contentDocument.body.scrollHeight +'px';"
-      src="pages//main.html"
-      frameborder="0"
-    ></iframe>
-
+    <div class="frame">
+      <iframe
+        src="pages//main.html"
+        id="myFrame"
+        width="100%"
+        onload="resizeIframe(this)"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <!-- onload="this.style.height=this.contentDocument.body.scrollHeight +'px';"  -->
     <script>
       function openHome() {
         document.getElementById("myFrame").src = "pages//main.html";
@@ -284,10 +299,12 @@
         document.getElementById("myFrame").src = "pages//quality.html";
         instance.close();
       }
-      function openSiteMap(){
+      function openSiteMap() {
         document.getElementById("myFrame").src = "pages//sitemap.html";
         instance.close();
       }
+
+      window.onload = function() {};
     </script>
     <script type="text/javascript">
       var elem = document.querySelector(".sidenav");
